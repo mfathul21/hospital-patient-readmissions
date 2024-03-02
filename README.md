@@ -23,3 +23,29 @@ Berdasarkan kondisi yang telah diuraikan sebelumnya, perusahaan memiliki tujuan 
 3. Pembangunan Model Prediktif: Perusahaan bermaksud untuk membuat model machine learning yang dapat memprediksi dengan seakurat mungkin apakah seorang pasien akan mengalami readmisi berdasarkan fitur-fitur yang ada. Dengan memiliki model prediktif yang handal, rumah sakit dapat mengidentifikasi pasien dengan risiko tinggi untuk mengalami readmisi dan mengambil tindakan yang diperlukan untuk meningkatkan kualitas perawatan dan mengurangi beban readmisi pasien.
 
 Dengan demikian, tujuan utama dari proyek ini adalah untuk memberikan wawasan yang berharga kepada rumah sakit dalam hal pengelolaan pasien yang berpotensi mengalami readmisi, serta membantu mereka dalam mengoptimalkan strategi perawatan dan pengambilan keputusan klinis.
+
+
+## Data Understanding
+Data yang digunakan berasal dari dataset kompetisi di DataCamp, yang dapat diakses melalui tautan <a href='https://app.datacamp.com/learn/competitions/hospital-patient-readmissions'>Competitions - DataCamp</a>. Dataset ini terdiri dari 25.000 baris data dan 17 kolom dengan 16 kolom fitur yang digunakan untuk memprediksi variabel target, yaitu readmitted.
+
+Berikut adalah informasi mengenai kolom fitur dalam dataset:
+- `age` : kelompok usia pasien
+- `time_in_hospital` : jumlah hari tinggal di rumah sakit (dari 1 hingga 14)
+- `n_procedures` : jumlah prosedur yang dilakukan selama pasien dirawat di rumah sakit
+- `n_lab_procedures` : jumlah prosedur laboratorium yang dilakukan selama masa rawat inap
+- `n_medications` : jumlah obat yang diberikan selama rawat inap di rumah sakit
+- `n_outpatient` : jumlah kunjungan rawat jalan pada tahun sebelum rawat inap di rumah sakit
+- `n_inpatient` : jumlah kunjungan rawat inap pada tahun sebelum tinggal di rumah sakit
+- `n_emergency` : jumlah kunjungan ke unit gawat darurat pada tahun sebelum rawat inap di rumah sakit
+- `medical_specialty` : spesialisasi dokter yang merawat
+- `diag_1` : diagnosis primer (Peredaran Darah, Pernapasan, Pencernaan, dll.)
+- `diag_2` : diagnosis sekunder
+- `diag_3` : diagnosis sekunder tambahan
+- `glucose_test` : hasil tes serum glukosa (tinggi, normal, atau tidak dilakukan)
+- `A1Ctest` : hasil tes A1C (tinggi, normal, atau tidak dilakukan)
+- `change` : apakah ada perubahan dalam pengobatan diabetes ('ya' atau 'tidak')
+- `diabetes_med` : apakah obat diabetes diresepkan ('ya' atau 'tidak')
+- `readmitted` : apakah pasien dirawat inap di rumah sakit ('ya' atau 'tidak')
+
+Referensi:
+Strack, Beata, et al. "Impact of HbA1c Measurement on Hospital Readmission Rates: Analysis of 70,000 Clinical Database Patient Records." BioMed Research International, vol. 2014, Article ID 781670, 11 pages, 2014.
